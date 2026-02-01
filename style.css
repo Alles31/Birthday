@@ -3,15 +3,17 @@ body {
   font-family: 'Arial', sans-serif;
   background: #f5f1ea;
   color: #2c2c2c;
+  font-size: 18px;
 }
 
-
+/* section */
 .page {
   min-height: 100vh;
-  padding: 80px;
+  padding: 32px 20px;
   box-sizing: border-box;
 }
 
+/* cover */
 .cover {
   display: flex;
   flex-direction: column;
@@ -21,65 +23,58 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.4em;
+  margin-bottom: 10px;
 }
 
 h2 {
   color: #6fa8dc;
+  font-size: 1.4em;
+  margin-bottom: 16px;
 }
 
 /* gallery */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-  margin-top: 30px;
+  gap: 14px;
+  margin-top: 20px;
 }
 
 .card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .card img {
   width: 100%;
-  height: 160px;
+  height: 140px;
   object-fit: cover;
 }
 
 .card p {
-  padding: 15px;
-  font-size: 0.9em;
+  padding: 12px;
+  font-size: 0.85em;
   color: #555;
 }
 
-@media (min-width: 768px) {
+/* DESKTOP (optional) */
+@media (min-width: 900px) {
+  .page {
+    padding: 80px;
+  }
+
+  h1 {
+    font-size: 3.5em;
+  }
+
   .gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 
   .card img {
     height: 200px;
-  }
-}
-
-@media (max-width: 600px) {
-  body {
-    font-size: 17px;
-  }
-
-  h1 {
-    font-size: 2.2em;
-  }
-
-  h2 {
-    font-size: 1.3em;
   }
 }
