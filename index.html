@@ -49,7 +49,7 @@
       </div>
       
       <div class="surprise-card">
-        <div class="card-emoji">💭</div>
+        <div class="card-emoji">🗣</div>
         <h3>Best Quote</h3>
         <p>"Gatau jangan nanya gw, gw pilih gatau karna gatau itu netral, gaada... gw itu netral kemana aja bisa"</p>
       </div>
@@ -99,6 +99,43 @@
 
   <section class="page final">
     <h2>🌟 Final - My Wish For You 🌟</h2>
+    
+    <div class="cake-container">
+      <p class="cake-instruction">🎂 Tiup lilinnya satu per satu dengan klik, lalu ucapkan permintaanmu! 🕯️</p>
+      
+      <div class="birthday-cake">
+        <div class="cake-body">🎂</div>
+        <div class="candles" id="candles">
+          <div class="candle" data-id="1">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="2">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="3">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="4">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="5">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wish-message hidden" id="wishMessage">
+        <div class="wish-text">
+          ✨ Semoga semua harapan dan impianmu tercapai! ✨
+        </div>
+      </div>
+    </div>
+
     <p>
       Aku harap di umur yang ke 17 ini kamu mendapatkan apa yang kamu inginkan, dilancarkan semua urusan kamu
       dan juga selalu mendapatkan kesehatan serta keselamatan, jaga diri kamu baik baik ya udah gede makin banyak tanggung jawab :v
@@ -128,6 +165,44 @@
         
         isOpened = true;
       }
+    });
+
+    // Birthday Candles Interaction
+    const candles = document.querySelectorAll('.candle');
+    const wishMessage = document.getElementById('wishMessage');
+    let candlesBlown = 0;
+    const totalCandles = candles.length;
+
+    candles.forEach(candle => {
+      candle.addEventListener('click', function() {
+        if (!this.classList.contains('blown')) {
+          // Matikan lilin
+          const flame = this.querySelector('.flame');
+          flame.style.opacity = '0';
+          flame.style.transform = 'scale(0)';
+          this.classList.add('blown');
+          
+          // Tambah efek smoke
+          const smoke = document.createElement('div');
+          smoke.className = 'smoke';
+          smoke.textContent = '💨';
+          this.appendChild(smoke);
+          
+          setTimeout(() => {
+            smoke.remove();
+          }, 1000);
+          
+          candlesBlown++;
+          
+          // Cek apakah semua lilin sudah ditiup
+          if (candlesBlown === totalCandles) {
+            setTimeout(() => {
+              wishMessage.classList.remove('hidden');
+              wishMessage.classList.add('show');
+            }, 500);
+          }
+        }
+      });
     });
   </script>
 
