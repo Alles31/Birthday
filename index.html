@@ -26,12 +26,48 @@
       Aku juga mau bilang makasih udah jadi temen yang asik walau kadang agak agak, tapi intinya makasih udah mau nerima aku jadi temen kamu.
       Ya meskipun perjalanan kita belum ada satu tahun. Dan ya meskipun kita sering ada begitunya :v tapi ya namanya pertemanan jadi itu normal<br><br>
       Aku berharap semoga kita bisa terus jaga hubungan pertemanan ini selama mungkin, dan aku janji bakal jadi temen yang lebih baik lagi buat kamu.
-      Sekali lagi, selamat ulang tahun yang ke 17 yaaa...., semoga hari hari kamu menyenangkan setelah ini,  semangattt!!!
+      Sekali lagi, selamat ulang tahun yang ke 17 yaaa...., semoga hari hari kamu menyenangkan setelah ini :D
     </p>
   </section>
 
-  <section class="page">
-  <h2>📸 Chapter 2 - Your Little Memories 📸</h2>
+  <section class="page gift-section">
+    <h2>🎁 Special Gift - Open Me! 🎁</h2>
+    <p class="gift-instruction">Klik kotak hadiah di bawah untuk membuka surprise spesial buat kamu!</p>
+    
+    <div class="gift-container">
+      <div class="gift-box" id="giftBox">
+        <div class="gift-icon">🎁</div>
+        <p class="gift-text">Klik untuk membuka</p>
+      </div>
+    </div>
+
+    <div class="surprise-cards hidden" id="surpriseCards">
+      <div class="surprise-card">
+        <div class="card-emoji">💬</div>
+        <h3>Kata favoritmu</h3>
+        <p>"males banget sih" - kata yang paling sering kamu ucapin wkwk</p>
+      </div>
+      
+      <div class="surprise-card">
+        <div class="card-emoji">😂</div>
+        <h3>Moment lucu</h3>
+        <p>Waktu kamu [sebutin moment lucu kalian] - gak akan aku lupain deh!</p>
+      </div>
+      
+      <div class="surprise-card">
+        <div class="card-emoji">🌟</div>
+        <h3>Hal yang aku suka</h3>
+        <p>Hal yang paling aku suka dari kamu adalah [isi dengan hal yang kamu suka]</p>
+      </div>
+      
+      <div class="surprise-card">
+        <div class="card-emoji">💭</div>
+        <h3>Quote buat kamu</h3>
+        <p>"[isi dengan quote atau pesan spesial buat dia]"</p>
+      </div>
+    </div>
+  </section>
+
 
   <div class="gallery">
     <div class="card">
@@ -76,6 +112,30 @@
       <br><br>✨ WYATB FOR YOU ✨
     </p>
   </section>
+
+  <script>
+    // Mystery Gift Box Interaction
+    const giftBox = document.getElementById('giftBox');
+    const surpriseCards = document.getElementById('surpriseCards');
+    let isOpened = false;
+
+    giftBox.addEventListener('click', function() {
+      if (!isOpened) {
+        // Animasi gift box menghilang
+        giftBox.style.transform = 'scale(0) rotate(180deg)';
+        giftBox.style.opacity = '0';
+        
+        // Tampilkan surprise cards setelah delay
+        setTimeout(() => {
+          giftBox.style.display = 'none';
+          surpriseCards.classList.remove('hidden');
+          surpriseCards.classList.add('show');
+        }, 600);
+        
+        isOpened = true;
+      }
+    });
+  </script>
 
 </body>
 </html>
