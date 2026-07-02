@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Message</title>
+
+    <style>
+        body{
+            background-color: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px 25px;
+            line-height: 1.8;
+        }
+
+        .container{
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: normal;
+        }
+
+        p{
+            margin-bottom: 25px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+        }
+
+        p:nth-child(2){ animation-delay: 1s; }
+        p:nth-child(3){ animation-delay: 3s; }
+        p:nth-child(4){ animation-delay: 5s; }
+        p:nth-child(5){ animation-delay: 7s; }
+        p:nth-child(6){ animation-delay: 9s; }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform: translateY(10px);
+            }
+
+            to{
+                opacity:1;
+                transform: translateY(0px);
+            }
+        }
+
+        .footer{
+            text-align:center;
+            margin-top:60px;
+            opacity:0.6;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Haha akhirnya ketemu juga, ini baca ya pesan nya</h1>
+
+        <p>
+            I know how hard it is to let you go.
+        </p>
+
+        <p>
+            Sometimes I still catch myself imagining how wonderful we could have been together, but I have to accept that fate has written a different story for us.
+        </p>
+
+        <p>
+            Thank you for stepping into my world and making my life so much brighter when I needed it most.
+        </p>
+
+        <p>
+            I will always cherish those memories, and a part of me will always love you.
+        </p>
+
+        <p>
+            The only difference is that starting today, my love for you will live in silence—quietly carried in my heart, rather than shown to the world.
+        </p>
+
+        <div class="footer">
+            Some stories are meant to be found.
+        </div>
+
+    </div>
+
+</body>
+</html>
