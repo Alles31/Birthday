@@ -32,12 +32,6 @@
             animation: fadeIn 1s forwards;
         }
 
-        p:nth-child(2){ animation-delay: 1s; }
-        p:nth-child(3){ animation-delay: 3s; }
-        p:nth-child(4){ animation-delay: 5s; }
-        p:nth-child(5){ animation-delay: 7s; }
-        p:nth-child(6){ animation-delay: 9s; }
-
         @keyframes fadeIn{
             from{
                 opacity:0;
@@ -61,34 +55,261 @@
 <body>
 
     <div class="container">
+    <div id="gate">
+    <h2>Kunci terakhir sebelum kamu membuka ini.</h2>
 
-        <h1>Haha akhirnya ketemu juga, ini baca ya pesan nya</h1>
+    <p>Kamu tau julukan yang pernah aku kasih ke kamu? itu kuncinya</p>
 
-        <p>
-            I know how hard it is to let you go.
-        </p>
+    <input type="text" id="finalKey" placeholder="...">
 
-        <p>
-            Sometimes I still catch myself imagining how wonderful we could have been together, but I have to accept that fate has written a different story for us.
-        </p>
+    <button onclick="unlock()">Continue</button>
 
-        <p>
-            Thank you for stepping into my world and making my life so much brighter when I needed it most.
-        </p>
+    <p id="error"></p>
+    </div>
+    <div id="message" style="display:none;">
 
-        <p>
-            I will always cherish those memories, and a part of me will always love you.
-        </p>
+    <h1>Soo yea? ketemu juga akhirnya silahkan dibaca :) </h1>
 
-        <p>
-            The only difference is that starting today, my love for you will live in silence—quietly carried in my heart, rather than shown to the world.
-        </p>
+    <p>
+        For the first time in my life, I fell in love unconditionally, without any clear reason other than the simple desire to have you by my side.
+    </p>
 
-        <div class="footer">
-            Some stories are meant to be found.
-        </div>
+    <p>
+        Ironically, our paths had crossed long before we ever officially met, completely unaware of who we were to each other.
+    </p>
 
+    <p>
+        As time moved forward, it slowly brought us closer, and within a few months, we finally got to know one another.
+    </p>
+
+    <p>
+        At first, there was nothing extraordinary between us. But as the days passed, I found myself becoming more and more drawn to you.
+    </p>
+
+    <p>
+        For three months, I quietly watched from afar, collecting small and beautiful moments that I never imagined would one day become some of my most treasured memories.
+    </p>
+
+    <p>
+        Eventually, I gathered the courage to tell you how I felt.
+    </p>
+
+    <p>
+        Things didn't unfold the way I had hoped they would, but somehow we kept holding on and continued to stay in each other's lives.
+    </p>
+
+    <p>
+        As the months passed, we experienced so much together.
+    </p>
+
+    <p>
+        There were beautiful moments that I will carry with me forever, but there were difficult ones too.
+    </p>
+
+    <p>
+        Small cracks began to appear between us, and although we always tried to mend them, I eventually found myself growing tired of asking my heart the same question over and over again:
+    </p>
+
+    <p>
+        <i>"What are we, and where do we stand?"</i>
+    </p>
+
+    <p>
+        So when July finally arrived, I made the hardest decision I have ever had to make.
+    </p>
+
+    <p>
+        Not because I wanted to leave.
+    </p>
+
+    <p>
+        Not because I hated you.
+    </p>
+
+    <p>
+        And certainly not because I stopped caring.
+    </p>
+
+    <p>
+        I simply could not continue living in a place where my heart was constantly searching for answers that never seemed to come.
+    </p>
+
+    <p>
+        Perhaps this is one of those bittersweet lessons life gives us—to remind us how precious someone can become, even if they were only ever meant to stay for a season.
+    </p>
+
+    <p>
+        Still, I will forever hold onto the beautiful routine we built throughout these past ten months.
+    </p>
+
+    <p>
+        Our first date.
+    </p>
+
+    <p>
+        Our first time going to the mall together.
+    </p>
+
+    <p>
+        The simple joy of buying snacks.
+    </p>
+
+    <p>
+        The endless conversations.
+    </p>
+
+    <p>
+        Even the frustrating moments that once felt so overwhelming.
+    </p>
+
+    <p>
+        Because in the end, none of those difficult days could ever outweigh the happiness you brought into my life.
+    </p>
+
+    <p>
+        They say that letting go is a process, but they never tell you how devastatingly difficult it is to take that final step.
+    </p>
+
+    <p>
+        Even now, when the world grows quiet, I still catch myself drifting back through the hallways of our past, wondering how beautiful our story might have been if life had simply allowed us a little more time.
+    </p>
+
+    <p>
+        But reality always finds its way back to me, gently reminding me that fate has written a different ending for us.
+    </p>
+
+    <p>
+        One where our paths must eventually diverge.
+    </p>
+
+    <p>
+        Looking back, I can still hear the echoes of everything we used to be.
+    </p>
+
+    <p>
+        Your laughter.
+    </p>
+
+    <p>
+        The late-night conversations that felt like secrets only we understood.
+    </p>
+
+    <p>
+        The silent moments that somehow said more than words ever could.
+    </p>
+
+    <p>
+        And the quiet comfort of simply knowing you were there.
+    </p>
+
+    <p>
+        You stepped into my life at a time when I was searching for solid ground, and somehow you made everything feel lighter.
+    </p>
+
+    <p>
+        For that, I will always be grateful.
+    </p>
+
+    <p>
+        I promise I will keep those memories safe.
+    </p>
+
+    <p>
+        Hidden away in the quietest corner of my heart, untouched by the passing of time.
+    </p>
+
+    <p>
+        And as strange as it may sound, I think a part of me will always love you.
+    </p>
+
+    <p>
+        No matter where life takes us.
+    </p>
+
+    <p>
+        No matter who we become.
+    </p>
+
+    <p>
+        No matter how much time passes.
+    </p>
+
+    <p>
+        That feeling may never truly disappear.
+    </p>
+
+    <p>
+        The only thing that must change is the way I carry it.
+    </p>
+
+    <p>
+        From this day forward, my love for you will live quietly in silence.
+    </p>
+
+    <p>
+        Not as a love that asks to be seen.
+    </p>
+
+    <p>
+        Not as a love that asks for anything in return.
+    </p>
+
+    <p>
+        But simply as something beautiful that once existed.
+    </p>
+
+    <p>
+        Something I was lucky enough to experience.
+    </p>
+
+    <p>
+        And so I leave it here, among the pages of our past, wishing you nothing but happiness and beautiful chapters ahead.
+    </p>
+
+    <div class="footer">
+        Dont be sad or whatever, i just want you to be happy and i hope you will always remember me as a good person in your life. <br>
     </div>
 
+    </div>
+    </div>
+
+
+    <script>
+function unlock(){
+
+    const input = document
+        .getElementById("finalKey")
+        .value
+        .trim()
+        .toLowerCase();
+
+    const accepted = [
+        "b747-400",
+        "747-400",
+        "boeing 747-400",
+        "747"
+    ];
+
+    if(accepted.includes(input)){
+
+        document.getElementById("gate").style.display = "none";
+        document.getElementById("message").style.display = "block";
+
+        return;
+    }
+
+    document.getElementById("error").innerText =
+        "Not this aircraft.";
+}
+
+document.getElementById("finalKey")
+.addEventListener("keypress", function(event){
+
+    if(event.key === "Enter"){
+        unlock();
+    }
+
+});
+</script>
 </body>
 </html>
