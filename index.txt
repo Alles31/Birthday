@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="page cover">
+    <div class="balloons">🎈</div>
+    <div class="balloons">🎈</div>
+    <div class="balloons">🎈</div>
+    <h1 class="animated-title">🎂 Happy Birthday 🎂</h1>
+    <h1 class="big-number">17</h1>
+    <p class="subtitle">✨ Buat orang yang katanya "males" :) ✨</p>
+    <div class="confetti">🎈🎈🎈🎈🎈</div>
+  </section>
+
+  <section class="page">
+    <h2>✉️ A Letter For You ✉️</h2>
+    <p>
+      Halo Caca, gak kerasa udah 17 tahun ya ehe sweetseventeen nich, oh ya aku mau ngasih sesuatu yang sedikit spesial di hari spesial kamu,
+      sekalian menambah repo aku sih hehe, oh ya selamat juga sekarang kamu udah punya ktp hehe, jadi sekarang bisa bikin sesuatu deh.
+      Semoga di tahun ini kamu makin bahagia!!, pokoknya wish you all the best deh.
+      Aku juga mau bilang makasih udah jadi temen yang asik walau kadang agak agak, tapi intinya makasih udah mau nerima aku jadi temen kamu.
+      Ya meskipun perjalanan kita belum ada satu tahun. Dan ya meskipun kita sering ada begitunya :v tapi ya namanya pertemanan jadi itu normal<br><br>
+      Aku berharap semoga kita bisa terus jaga hubungan pertemanan ini selama mungkin, dan aku janji bakal jadi temen yang lebih baik lagi buat kamu.
+      Sekali lagi, selamat ulang tahun yang ke 17 yaaa...., semoga hari hari kamu menyenangkan setelah ini :D
+    </p>
+  </section>
+
+  <section class="page gift-section">
+    <h2>🎁 Special Flashback 🎁</h2>
+    <p class="gift-instruction">Klik kotak hadiah di bawah ini untuk melihat sesuatu buat kamu!</p>
+    
+    <div class="gift-container">
+      <div class="gift-box" id="giftBox">
+        <div class="gift-icon">🎁</div>
+        <p class="gift-text">Klik untuk membuka</p>
+      </div>
+    </div>
+
+    <div class="surprise-cards hidden" id="surpriseCards">
+      <div class="surprise-card">
+        <div class="card-emoji">💬</div>
+        <h3>Kata favorit</h3>
+        <p>"Males" - Jujur setiap conversation kata ini pasti muncul, dasar manusia males</p>
+      </div>
+      
+      <div class="surprise-card">
+        <div class="card-emoji">🗣</div>
+        <h3>Best Quote</h3>
+        <p>"Gatau jangan nanya gw, gw pilih gatau karna gatau itu netral, gaada... gw itu netral kemana aja bisa"</p>
+      </div>
+      
+      <div class="surprise-card">
+        <div class="card-emoji">🎼</div>
+        <h3>Top 1 music</h3>
+        <p>DO YOU THINK I FORGOT HER?, ga bosen bosen apaya :v, tapi kayanya udah berubah </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="page gallery-section">
+  <h2>📸 Little Memories 📸</h2>
+  <div class="gallery">
+    <div class="card">
+      <img src="foto1.jpeg">
+      <p>First moment i capture you from my digicam</p>
+    </div>
+
+    <div class="card">
+      <img src="foto2.jpeg">
+      <p>Firstly kenapa mau mau aja diajak jalan?</p>
+    </div>
+
+    <div class="card">
+      <img src="foto3.jpeg">
+      <p>Dan saat saat sibuk ngurusin proposal sponsor.</p>
+    </div>
+
+    <div class="card">
+      <img src="foto4.jpeg">
+      <p>Tidak ramah, bintang 1 >:(</p>
+    </div>
+
+    <div class="card">
+      <img src="foto5.jpeg">
+      <p>Umm no comment kenapa kamu mau ikut ke museum jalita :v.</p>
+    </div>
+  </div>
+  </section>
+
+
+  <section class="page final">
+    <h2>🌟 Wish For You 🌟</h2>
+    
+    <div class="cake-container">
+      <p class="cake-instruction">🎂 Tiup lilinnya (diklik) and make a wish! 🕯️</p>
+      
+      <div class="birthday-cake">
+        <div class="cake-body">🎂</div>
+        <div class="candles" id="candles">
+          <div class="candle" data-id="1">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="2">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="3">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="4">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+          <div class="candle" data-id="5">
+            <div class="flame">🔥</div>
+            <div class="wick">|</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="wish-message hidden" id="wishMessage">
+        <div class="wish-text">
+          ✨ Hope your wish will become true! ✨
+        </div>
+      </div>
+    </div>
+
+    <p>
+      <strong>My Wish For You</strong><br><br>
+      Aku harap di umur yang ke 17 ini kamu mendapatkan apa yang kamu inginkan, dilancarkan semua urusan kamu
+      dan juga selalu mendapatkan kesehatan serta keselamatan, jaga diri kamu baik baik ya udah gede makin banyak tanggung jawab :v
+      . Alright maybe thats all for u, and remember i always support you, semangatt!
+      <br><br>✨ WYATB ✨
+    </p>
+  </section>
+
+  <script>
+    // Mystery Gift Box Interaction
+    const giftBox = document.getElementById('giftBox');
+    const surpriseCards = document.getElementById('surpriseCards');
+    let isOpened = false;
+
+    giftBox.addEventListener('click', function() {
+      if (!isOpened) {
+        // Animasi gift box menghilang
+        giftBox.style.transform = 'scale(0) rotate(180deg)';
+        giftBox.style.opacity = '0';
+        
+        // Tampilkan surprise cards setelah delay
+        setTimeout(() => {
+          giftBox.style.display = 'none';
+          surpriseCards.classList.remove('hidden');
+          surpriseCards.classList.add('show');
+        }, 600);
+        
+        isOpened = true;
+      }
+    });
+
+    // Birthday Candles Interaction
+    const candles = document.querySelectorAll('.candle');
+    const wishMessage = document.getElementById('wishMessage');
+    let candlesBlown = 0;
+    const totalCandles = candles.length;
+
+    candles.forEach(candle => {
+      candle.addEventListener('click', function() {
+        if (!this.classList.contains('blown')) {
+          // Matikan lilin
+          const flame = this.querySelector('.flame');
+          flame.style.opacity = '0';
+          flame.style.transform = 'scale(0)';
+          this.classList.add('blown');
+          
+          // Tambah efek smoke
+          const smoke = document.createElement('div');
+          smoke.className = 'smoke';
+          smoke.textContent = '💨';
+          this.appendChild(smoke);
+          
+          setTimeout(() => {
+            smoke.remove();
+          }, 1000);
+          
+          candlesBlown++;
+          
+          // Cek apakah semua lilin sudah ditiup
+          if (candlesBlown === totalCandles) {
+            setTimeout(() => {
+              wishMessage.classList.remove('hidden');
+              wishMessage.classList.add('show');
+            }, 500);
+          }
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
